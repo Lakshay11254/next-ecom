@@ -1,4 +1,6 @@
 "use client";
+import { Button } from '@/components/ui/button';
+import { ShoppingBag } from 'lucide-react';
 import Link from 'next/link'
 import { usePathname } from 'next/navigation';
 import React from 'react'
@@ -46,6 +48,12 @@ export default function Navbar() {
             </div>
           ))}
         </nav>
+
+        <div className='flex divide-x border-r sm:border-l'>
+                <Button className=' flex flex-col gap-y-1.5 h-12 w-12 sm:h-20 sm:w-20 md:h-24 md:w-24 rounded-none'>
+                    <ShoppingBag/>
+                </Button>
+        </div>
         
         </div>        
     </header>
