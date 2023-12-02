@@ -32,7 +32,7 @@ export default async function ProductPge({
   params: { slug: string };
 }) {
   const data: fullProduct = await getData(params.slug);
-
+//return statement
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-screen-xl px-4 md:px-8">
